@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Single Page Home Page</title>
+        <!-- css styles -->
+        <link rel="stylesheet" href="css/spa.css">
+        <link rel="stylesheet" href="css/spa.shell.css">
+
+        <!-- Сторонние Js-Файлы -->
+        <script src="js/jq/jquery.min.js"></script>  
+        <script src="js/jq/jquery.uriAnchor.js"></script> 
+
+        <!-- js-файлы приложения --> 
+        <script src="js/spa.js"></script>  
+        <script src="js/spa.shell.js"></script>  
+        <script>
+            $(document).ready(function(){
+                spa.initModule( $('#spa'));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="spa"></div>
+    </body>
+</html>
